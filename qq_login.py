@@ -310,6 +310,7 @@ if __name__ == "__main__":
             def table_double_click(event):
                 for item in table.selection():
                     table.delete(item)
+                    tkinter.messagebox.showinfo('通知', 'QQ删除成功！')
 
             table.bind('<ButtonRelease-1>', table_click)
             table.bind('<Double-Button-1>', table_double_click)
